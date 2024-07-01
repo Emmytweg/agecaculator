@@ -1,0 +1,128 @@
+
+root{
+    --purple: hsl(259, 100%, 65%)
+    --Light-red: hsl(0, 100%, 67%)
+/* 
+### Neutral */
+
+--White: hsl(0, 0%, 100%)
+--Off-white: hsl(0, 0%, 94%)
+--Light-grey: hsl(0, 0%, 86%)
+--Smokey-grey: hsl(0, 1%, 44%)
+--Off-black: hsl(0, 0%, 8%)
+}
+
+body{
+    background-color: hsl(0, 0%, 94%) ;
+    padding: 10%; 
+    font-family: "Poppins", sans-serif;
+}
+.newerror{
+    color: red;
+    font-size: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-around; */
+    /* align-items: start; */
+    width: 50%;
+    height: 300px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 15px 15px 100px 15px;
+    padding: 25px;
+}
+.top-box{
+    display: flex;
+    height: 100px;
+    width: 70%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #898989;
+} 
+hr{
+    width: 90%;
+    appearance: none;
+    border:1px solid #F4F4F4 ;
+    box-shadow: 2px 2px 5px #F4F4F4;
+}
+
+.top-box input{
+    width: 80px;
+    height: 35px;
+    border:1px solid #F4F4F4 ;
+    border-radius: 5px;
+    color:#898989 ;
+    font-weight: 600;
+    
+    margin-right: 30px;
+}
+.line-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -5px;
+
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #864CFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text-years{
+    display: flex;
+    align-items: baseline;
+   
+}
+.input-dash{
+    font-size: 50px;
+    margin-right: 0.5em;
+    width: 80px;
+    border: none;
+    background: transparent;
+    color: #864CFF;
+    
+}
+.years, .month, .days{
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: -40px;
+}
+
+@media screen and (max-width:680px) {
+    body{
+        padding: 2%;
+    }
+    .container{
+        height: fit-content;
+        width: 80%;
+    }
+    .top-box .day-input, .month-input {
+        width: 200px;
+    }
+    .year-input{
+        width:150px ;
+    }
+    .top-box input{
+        /* width: 100%; */
+        margin-right: 10px;
+    }
+    .line-arrow{
+        margin-bottom: 20px;
+    }
+    .circle{
+        position: absolute;
+    }
+    .years, .month, .days{
+        font-size: 45px;
+    }
+}
